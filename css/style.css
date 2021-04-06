@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -28,6 +29,7 @@ input:focus,
 input:hover {
     border: none;
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -54,8 +56,17 @@ input:hover {
     width: 100%;
     height: 100%;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #060818;
 }
@@ -118,6 +129,8 @@ input:hover {
     bottom: 0;
     background-color: #878DA7;
     border: 2px solid #878DA7;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -129,11 +142,14 @@ input:hover {
     background-color: #E5E6EB;
     left: 1px;
     bottom: 0.5px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     color: #fff;
     text-align: center;
     font-size: 14px;
     line-height: 1.3em;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
 }
 
@@ -159,6 +175,7 @@ input:hover {
 
 .switch-rounded .slider,
 .switch-rounded .slider:before {
+    -webkit-border-radius: 50px;
     border-radius: 50px;
 }
 
@@ -216,6 +233,8 @@ input:hover {
     height: 19px;
     left: 2px;
     bottom: 2px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     color: #878DA7;
     text-align: center;
