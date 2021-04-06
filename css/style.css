@@ -1,0 +1,248 @@
+/* Popoins Fort */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ======================== 
+| Global Css
+======================== */
+
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+input,
+input:focus,
+input:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.sec-title {
+    margin: 10px 0px;
+}
+
+.sec-title h2 {
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/* ======================== 
+| ##END Of Global Css
+======================== */
+
+
+/* ===============
+| Content Wrapper Style
+==================*/
+
+.main {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060818;
+}
+
+
+/* ===============
+| Swicther wrapper Style
+==================*/
+
+.switch-wrapper {
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    padding: 20px 20px;
+    margin: 50px auto;
+    background-color: #0E1726;
+}
+
+
+/* ===============
+|Switch Box 
+================== */
+
+.switch-box {
+    padding: 10px 10px;
+}
+
+.switch-box {
+    color: #fff;
+}
+
+
+/* ===============
+|Switch Css
+================== */
+
+.switch {
+    width: 35px;
+    height: 18px;
+    display: inline-block;
+    background: transparent;
+    position: relative;
+    margin: 10px 5px;
+}
+
+.switch input {
+    display: none;
+}
+
+
+/* Switcher Slider */
+
+.switch .slider {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #878DA7;
+    border: 2px solid #878DA7;
+    transition: .3s;
+}
+
+.switch .slider::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #E5E6EB;
+    left: 1px;
+    bottom: 0.5px;
+    transition: .3s;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+}
+
+
+/* Default Switcher After Switch*/
+
+.switch input:checked+.slider {
+    background-color: #E5E6EB;
+    border-color: #E5E6EB;
+}
+
+.switch input:checked+.slider:before {
+    background-color: #2196F3;
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+
+/* 
+
+/* Rounded Switcher */
+
+.switch-rounded .slider,
+.switch-rounded .slider:before {
+    border-radius: 50px;
+}
+
+
+/* Switch Outline */
+
+.switch-outline {
+    background-color: transparent;
+}
+
+.switch-outline .slider {
+    border: 2px solid #1ABC9C;
+    background-color: transparent;
+}
+
+.switch-outline .slider::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #1ABC9C;
+}
+
+
+/* Outline Switcher After Switch */
+
+.switch-outline input:checked+.slider {
+    border-color: #2196F3;
+    background-color: transparent;
+}
+
+.switch-outline input:checked+.slider:before {
+    background-color: #2196F3;
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+
+/* Switch WIth icons */
+
+.switch-icons {
+    width: 55px;
+    height: 27px;
+}
+
+.switch-icons .slider {
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.switch-icons .slider::before {
+    content: "\f00d";
+    width: 19px;
+    height: 19px;
+    left: 2px;
+    bottom: 2px;
+    transition: .3s;
+    color: #878DA7;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+.switch-outline.switch-icons .slider::before {
+    color: #fff;
+}
+
+
+/* .switch-icons input:checked+.slider {} */
+
+.switch-icons input:checked+.slider:before {
+    content: '\f00c';
+    color: #fff;
+    background-color: #2196F3;
+    -webkit-transform: translateX(27.5px);
+    -ms-transform: translateX(27.5px);
+    transform: translateX(27.5px);
+}
+
+
+/* With Icons */
+
+
+/* ===============
+| #END Switch Css
+================== */
